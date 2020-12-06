@@ -1,0 +1,13 @@
+{% extends './base.html' %}
+
+{% block content %}
+  <p>{{ response }}</p>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        {% if invalid_fields %}
+          alert("invalid fields: {{ invalid_fields|escapejs }}")
+        {% endif %}
+    </script>
+{% endblock %}

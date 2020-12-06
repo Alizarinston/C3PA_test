@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+
+{% block content %}
+  {{ response }}
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        setTimeout("location.href = 'https://www.google.com/';",3000);
+    </script>
+{% endblock %}

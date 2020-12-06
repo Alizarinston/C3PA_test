@@ -1,0 +1,33 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .person_form {
+            position: absolute;
+            left: 50%; top: 50%;
+            margin-top: -150px;
+            margin-left: -150px;
+        }
+    </style>
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="page-header">
+        <h1><a href="/">C3PA_test</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+{% block scripts %}
+{% endblock scripts %}
